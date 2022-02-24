@@ -24,7 +24,7 @@ function QuemSomos() {
         }
       />
       <div className={styles.simule}>
-        <p>Quer saber quantos custa para instalar energia solar?</p>
+        <p>Quer saber quanto custa para instalar energia solar?</p>
         <Button variant="warning">SIMULE SEU PROJETO</Button>
       </div>
     </div>

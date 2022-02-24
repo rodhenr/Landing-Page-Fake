@@ -8,13 +8,12 @@ function NavbarComponent() {
       <Navbar bg="dark" expand="lg" variant="dark">
         <Container>
           <Navbar.Brand href="#home">
-            <Image
+          <Image
               src={"/images/logo.png"}
               alt="logo"
-              width="50"
-              height="30"
-              layout="responsive"
-              objectFit="contain"
+              height="60px"
+              width="80px"
+              layout="fixed"
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -30,17 +29,6 @@ function NavbarComponent() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-      {/* <nav>
-        <ul>
-          <li>Home</li>
-          <li>Quem Somos</li>
-          <li>Benefícios</li>
-          <li>Clientes</li>
-          <li>Notícias</li>
-          <li>Contato</li>
-        </ul>
-      </nav> */}
     </aside>
   );
 }

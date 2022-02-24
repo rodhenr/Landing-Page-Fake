@@ -1,17 +1,15 @@
-import Image from "next/image";
 import React from "react";
+import styles from "../../styles/Contato.module.scss";
 
 interface Props {
   title: string;
   text: string;
-  imgName: string;
 }
 
-function Contato({ title, imgName, text }: Props) {
+function Contato({ title, text }: Props) {
   return (
-    <div>
-      <Image src={`/images/${imgName}`} alt="Contato" width="50px" height="1px" layout="responsive" objectFit="contain"/>
-      <p>{title}</p>
+    <div className={styles.boxContato}>
+      <h1>{title}</h1>
       <p>{text}</p>
     </div>
   );

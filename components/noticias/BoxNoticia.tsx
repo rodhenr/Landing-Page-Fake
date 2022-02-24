@@ -1,4 +1,5 @@
 import Image from "next/image";
+import styles from "../../styles/Noticias.module.scss";
 
 interface Props {
   text: string;
@@ -8,7 +9,13 @@ interface Props {
 function BoxNoticia({ text, imgName }: Props) {
   return (
     <div>
-      <Image src={`/images/${imgName}`} alt="Noticia" />
+      <Image
+        src={`/images/${imgName}`}
+        alt="Noticia"
+        height="180px"
+        width="180px"
+        layout="fixed"
+      />
       <p>{text}</p>
     </div>
   );

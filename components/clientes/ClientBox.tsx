@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Button } from "react-bootstrap";
+import styles from "../../styles/Clientes.module.scss";
 
 interface Props {
   text: string;
@@ -7,17 +9,12 @@ interface Props {
 
 function ClientBox({ text, imgName }: Props) {
   return (
-    <div>
-      <Image
-        src={`/images/${imgName}`}
-        alt="Cliente"
-        width="50px"
-        height="1px"
-        layout="responsive"
-        objectFit="contain"
-      />
-      <div>
-        <p>{text}</p>
+    <div
+      className={styles.box}
+      style={{ background: `url(/images/${imgName})`, backgroundAttachment: "fixed", backgroundPosition: "center", backgroundSize: "cover"}}
+    >
+      <div className={styles.boxText}>
+        <Button variant="warning">{text}</Button>
       </div>
     </div>
   );

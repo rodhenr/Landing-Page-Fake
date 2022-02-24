@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import styles from "../../styles/Beneficios.module.scss";
 
 interface Props {
   text: string;
@@ -8,15 +9,15 @@ interface Props {
 
 function Beneficio({ text, imgName }: Props) {
   return (
-    <div>
-      <Image
-        src={`/images/${imgName}`}
-        alt={imgName}
-        width="50px"
-        height="1px"
-        layout="responsive"
-        objectFit="contain"
-      />
+    <div className={styles.beneficiosBox}>
+      <div>
+        <Image
+          src={`/images/${imgName}`}
+          alt={imgName}
+          width="50px"
+          height="50px"
+        />
+      </div>
       <p>{text}</p>
     </div>
   );

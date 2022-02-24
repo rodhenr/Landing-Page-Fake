@@ -1,8 +1,8 @@
-import React from "react";
+import styles from "../../styles/Footer.module.scss";
 
 function index() {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <p>&copy; Solar Energia - 2022 | Todos os direitos reservados</p>
     </footer>
   );

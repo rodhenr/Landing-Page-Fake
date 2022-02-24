@@ -5,6 +5,7 @@ import Beneficios from "../components/beneficios/index";
 import Clientes from "../components/clientes/index";
 import Contato from "../components/contato/index";
 import Footer from "../components/footer/index";
+import Noticias from "../components/noticias/index";
 import "bootstrap/dist/css/bootstrap.css";
 
 function index() {
@@ -14,6 +15,7 @@ function index() {
       <QuemSomos />
       <Beneficios />
       <Clientes />
+      <Noticias />
       <Contato />
       <Footer />
     </>

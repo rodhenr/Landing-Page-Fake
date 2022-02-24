@@ -99,10 +99,11 @@
 .simule {
   align-items: center;
   background: url(/images/solar5.jpg);
+  background-attachment: fixed;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 30vh;
+  min-height: 30vh;
   justify-content: space-evenly;
 
   p {
