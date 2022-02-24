@@ -1,8 +1,10 @@
 import Box from "./Box";
+import { Button } from "react-bootstrap";
+import styles from "../../styles/QuemSomos.module.scss";
 
 function QuemSomos() {
   return (
-    <div>
+    <div className={styles.diferencial}>
       <Box
         title={"PRODUTOS CONFIÁVEIS"}
         text={
@@ -21,9 +23,9 @@ function QuemSomos() {
           "Nosso setor de de Venda e Engenharia estão aptos a apresentar e detalhar todas as vantagens dos produtos e processos, sanando dúvidas decorrentes do seu projeto."
         }
       />
-      <div>
+      <div className={styles.simule}>
         <p>Quer saber quantos custa para instalar energia solar?</p>
-        <button>SIMULE SEU PROJETO</button>
+        <Button variant="warning">SIMULE SEU PROJETO</Button>
       </div>
     </div>
   );

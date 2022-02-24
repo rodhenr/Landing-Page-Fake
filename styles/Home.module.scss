@@ -1,0 +1,17 @@
+.home {
+  height: 50vh;
+  position: relative;
+}
+
+.homeBg {
+    align-items: end;
+  background: url("/images/bg.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: end;
+  height: 40vh;
+}
+
+.homeBg button {
+    margin: 8px;
+}

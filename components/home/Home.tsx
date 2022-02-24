@@ -1,17 +1,11 @@
 import Image from "next/image";
+import { Button } from "react-bootstrap";
+import styles from "../../styles/Home.module.scss";
 
 function Home() {
   return (
-    <div>
-      <Image
-        src="/images/casa_topo.png"
-        alt="Ilustração casa"
-        width="50px"
-        height="1px"
-        layout="responsive"
-        objectFit="contain"
-      />
-      <button>Entre em Contato</button>
+    <div className={styles.homeBg}>
+      <Button variant="warning">ENTRE EM CONTATO</Button>
     </div>
   );
 }

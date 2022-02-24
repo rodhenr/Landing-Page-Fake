@@ -1,11 +1,11 @@
-import React from "react";
 import Home from "./Home";
-import Navbar from "./Navbar";
+import NavbarComponent from "./NavbarComponent";
+import styles from "../../styles/Home.module.scss";
 
 function index() {
   return (
-    <header id="home">
-      <Navbar />
+    <header id="home" className={styles.home}>
+      <NavbarComponent />
       <Home />
     </header>
   );
