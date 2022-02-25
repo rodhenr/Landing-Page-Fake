@@ -5,7 +5,7 @@ import styles from "../../styles/QuemSomos.module.scss";
 
 function index() {
   return (
-    <section id="sobre" className={styles.quemSomos}>
+    <section id="quemsomos">
       <Descricao />
       <Diferencial />
     </section>

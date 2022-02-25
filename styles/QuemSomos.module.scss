@@ -1,75 +1,17 @@
 .descricao {
   font-family: "DM Sans", sans-serif;
-  margin: 0 1.8rem;
   text-align: justify;
-
-  h1 {
-    font-size: 1.4rem;
-    margin: 1rem 0;
-  }
 
   p {
     color: #7a7a7a;
-    line-height: 1.1rem;
-    margin: 1rem 0;
   }
 }
 
 .dataWrapper {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin: 3rem 0;
-
+  text-align: center;
   hr {
     width: 60vw;
   }
-}
-
-.dataOne {
-  p {
-    font-size: 0.9rem;
-    margin: 0;
-    text-align: center;
-  }
-
-  p:first-child {
-    color: #3593c1;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-}
-
-.dataTwo {
-  p {
-    font-size: 0.9rem;
-    margin: 0;
-    text-align: center;
-  }
-
-  p:first-child {
-    color: #039d25;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-}
-
-.dataThree {
-  p {
-    font-size: 0.9rem;
-    margin: 0;
-    text-align: center;
-  }
-
-  p:first-child {
-    color: #6910ae;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-}
-
-.diferencial {
-  margin: 0;
 }
 
 .box {
@@ -78,18 +20,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   height: 160px;
-  padding: 1rem 1.5rem;
   text-align: justify;
-
-  h1 {
-    font-size: 1.3rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-    line-height: 1.1rem;
-    margin: 1rem 0 0 0;
-  }
 
   &:nth-child(2) {
     background-color: #0e2f8c;
@@ -97,22 +28,13 @@
 }
 
 .simule {
-  align-items: center;
   background: url(/images/solar5.jpg);
-  background-attachment: fixed;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  min-height: 30vh;
-  justify-content: space-evenly;
+  height: 250px;
 
   p {
     color: #f5f9ff;
     font-family: "DM Sans", sans-serif;
-    font-size: 1.3rem;
-    margin: 0;
-    text-align: center;
-    width: 70%;
+    width: 80%;
   }
-  
 }

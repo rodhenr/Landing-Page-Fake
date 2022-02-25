@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../../styles/Contato.module.scss";
 
 interface Props {
   title: string;
@@ -8,9 +7,9 @@ interface Props {
 
 function Contato({ title, text }: Props) {
   return (
-    <div className={styles.boxContato}>
-      <h1>{title}</h1>
-      <p>{text}</p>
+    <div>
+      <h1 className="m-0 text-primary fs-3">{title}</h1>
+      <p className="m-0 fs-6">{text}</p>
     </div>
   );
 }

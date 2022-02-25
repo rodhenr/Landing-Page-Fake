@@ -1,53 +1,36 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-
     h1 {
         font-family: 'Poppins', sans-serif;
-        font-size: 1.4rem;
-        margin: 1.5rem;
     }
 }
 
 .box {
     min-height: 250px;
-    position: relative;
-    object-fit: cover;
-    width: 100%;
-}
-
-.boxText {
-    bottom: 10px;
-    left: 10px;
-    position: absolute;
 }
 
 .app {
-    align-items: center;
     background-color: #0E2F8C;
     color: #fff;
-    display: flex;
     font-family: 'DM Sans', sans-serif;
     font-weight: 200;
-    gap: 1rem;
-    height: 320px;
-    padding: 1.6rem;
-
-    h1 {
-        font-size: 1.2rem;
-        margin: 0;
-    }
 
     p {
-        font-size: 0.8rem;
-        margin: 0;
+        text-align: justify;
+    }
+
+    @media(min-width: 768px) {
+        h1 {
+            font-size: 1.4rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
     }
 }
 
-.appDesc {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
+.appDownload {
+
+    @media(min-width: 768px) {
+    }
 }

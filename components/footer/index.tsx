@@ -1,9 +1,12 @@
 import styles from "../../styles/Footer.module.scss";
 
 function index() {
+
+    const year = new Date().getFullYear();
+
   return (
     <footer className={styles.footer}>
-      <p>&copy; Solar Energia - 2022 | Todos os direitos reservados</p>
+      <p className="m-0">&copy; Solar Energia - {year} | Todos os direitos reservados</p>
     </footer>
   );
 }

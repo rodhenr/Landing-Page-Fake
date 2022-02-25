@@ -1,6 +1,7 @@
 import React from "react";
 import Contato from "./Contato";
-import { Form, Button, FloatingLabel } from "react-bootstrap";
+import ContactForm from "./ContactForm";
+import { Stack, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLocationDot,
@@ -12,61 +13,38 @@ import styles from "../../styles/Contato.module.scss";
 
 function index() {
   return (
-    <section id="contato" className={styles.container}>
-      <div className={styles.contato}>
-        <h1>Entre em Contato</h1>
-        <p>Utilize um dos canais abaixo para entrar em contato</p>
-      </div>
-
-      <div className={styles.contatoDesc}>
-        <div className={styles.contatoItem}>
+    <section id="contato" className={`bg-light bg-gradient p-4 my-5 ${styles.container}`}>
+      <Stack className={`${styles.contatoInfo} mb-5 text-center`}>
+        <h1 className="fs-2 mb-1">Entre em Contato</h1>
+        <p className="mb-3 text-muted">
+          Utilize um dos canais abaixo para entrar em contato
+        </p>
+        <div className="my-3">
           <FontAwesomeIcon icon={faLocationDot} />
           <Contato
             title={"ENDEREÇO"}
-            text={"Avenida Senador Salgado Filho, São Leopoldo - RS"}
+            text={"Rua Sem Nome Nenhum, n°111 - Cidade Y - MG"}
           />
         </div>
-        <div className={styles.contatoItem}>
+        <div className="mb-3">
           <FontAwesomeIcon icon={faEnvelope} />
-          <Contato title={"E-MAIL"} text={"conecta.energiasolar@gmail.com"} />
+          <Contato title={"E-MAIL"} text={"contato.solarenergia@email.com"} />
         </div>
-        <div className={styles.contatoItem}>
+        <div className="mb-3">
           <FontAwesomeIcon icon={faPhone} />
           <Contato
             title={"TELEFONE"}
-            text={"(51) 99715-0692 e (51) 99653-5109"}
+            text={"(99) 99999-9999"}
           />
         </div>
-        <div className={styles.contatoItem}>
+        <div className="mb-3">
           <FontAwesomeIcon icon={faWhatsapp} />
           <Contato title={"WHATSAPP"} text={"Clique aqui para conversar"} />
         </div>
+      </Stack>
+      <div>
+        <ContactForm />
       </div>
-      <Form className={styles.form}>
-        <FloatingLabel controlId="name" label="Nome" className="mb-2">
-          <Form.Control type="text" placeholder="Nome" />
-        </FloatingLabel>
-
-        <FloatingLabel controlId="name" label="E-mail" className="mb-2">
-          <Form.Control type="email" placeholder="E-mail" />
-        </FloatingLabel>
-
-        <FloatingLabel controlId="name" label="Telefone" className="mb-2">
-          <Form.Control type="text" placeholder="Telefone" />
-        </FloatingLabel>
-
-        <FloatingLabel controlId="name" label="Cidade" className="mb-2">
-          <Form.Control type="text" placeholder="Cidade" />
-        </FloatingLabel>
-        <Form.Control
-          as="textarea"
-          style={{ height: "200px" }}
-          placeholder="Mensagem"
-        />
-        <Button variant="warning" type="submit">
-          Enviar
-        </Button>
-      </Form>
     </section>
   );
 }

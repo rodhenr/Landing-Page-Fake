@@ -4,7 +4,7 @@ import styles from "../../styles/Home.module.scss";
 
 function index() {
   return (
-    <header id="home" className={styles.home}>
+    <header id="home">
       <NavbarComponent />
       <Home />
     </header>

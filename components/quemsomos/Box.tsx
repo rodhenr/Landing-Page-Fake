@@ -8,9 +8,9 @@ interface Props {
 
 function Box({ title, text }: Props) {
   return (
-    <div className={styles.box}>
-      <h1>{title}</h1>
-      <p>{text}</p>
+    <div className={`${styles.box} py-3 px-4`}>
+      <h1 className="fs-3 mb-3">{title}</h1>
+      <p className="fs-6 lh-sm m-0">{text}</p>
     </div>
   );
 }
