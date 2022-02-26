@@ -1,5 +1,16 @@
 .container {
   overflow: hidden;
+
+  h1 {
+    margin: 0 !important;
+  }
+
+  @media (min-width: 1100px) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .boxNoticias {
@@ -23,8 +34,34 @@
 }
 
 .box {
-    @media(min-width: 768px) {
-        display: flex;
-        flex-direction: row;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.boxImg {
+  @media (min-width: 768px) {
+    img,
+    span {
+      height: 160px !important;
+      width: 220px !important;
     }
+  }
+
+  @media (min-width: 1000px) {
+    img,
+    span {
+      height: 200px !important;
+      width: 280px !important;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    img,
+    span {
+      height: 250px !important;
+      width: 350px !important;
+    }
+  }
 }

@@ -4,7 +4,7 @@ import styles from "../../styles/Noticias.module.scss";
 function index() {
   return (
     <section id="noticias" className={`${styles.container} my-4 mx-3`}>
-      <h1 className="fs-3 mt-4 mb-3 p-1">
+      <h1 className="fs-3 text-center">
         ÚLTIMAS NOTÍCIAS SOBRE ENERGIA SOLAR
       </h1>
       <div className={styles.box}>

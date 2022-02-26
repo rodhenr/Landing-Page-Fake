@@ -1,36 +1,89 @@
 .container {
-    h1 {
-        font-family: 'Poppins', sans-serif;
-    }
+  h1 {
+    font-family: "Poppins", sans-serif;
+  }
 }
 
 .box {
-    min-height: 250px;
+  min-height: 250px;
+
+  @media (min-width: 1100px) {
+    min-height: 350px;
+  }
 }
 
 .app {
-    background-color: #0E2F8C;
-    color: #fff;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 200;
+  background-color: #0e2f8c;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 200;
+  display: flex;
+
+  p {
+    text-align: justify;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 1.9rem !important;
+      text-align: center;
+    }
 
     p {
-        text-align: justify;
+      font-size: 1.4rem !important;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    align-items: center;
+
+    h1 {
+      font-size: 2.3rem !important;
     }
 
-    @media(min-width: 768px) {
-        h1 {
-            font-size: 1.4rem;
-        }
-
-        p {
-            font-size: 1.5rem;
-        }
+    p {
+      font-size: 1.5rem !important;
+      width: 60%;
+      margin: 0 auto !important;
+      padding-top: 3rem !important;
     }
+  }
 }
 
-.appDownload {
+.appContainer {
+  margin-left: 6rem !important;
+}
 
-    @media(min-width: 768px) {
+.appStore {
+  @media (min-width: 768px) {
+    img {
+      height: 50px !important;
+      width: 180px !important;
     }
+  }
+
+  @media (min-width: 1400px) {
+    img {
+      height: 60px !important;
+      width: 200px !important;
+    }
+  }
+}
+
+.appImgContainer {
+  display: none;
+
+  @media (min-width: 500px) {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  @media (min-width: 1100px) {
+    img,
+    span {
+      min-height: 380px !important;
+      min-width: 200px !important;
+      opacity: 0.8;
+    }
+  }
 }

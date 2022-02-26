@@ -1,29 +1,107 @@
+.container {
+  @media (min-width: 1400px) {
+    display: flex;
+    gap: 8rem;
+  }
+}
+
+.diferencialContainer {
+  @media (min-width: 1100px) {
+    display: grid !important;
+    grid-template-areas: "one two" "three four" "simule simule";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
 .descricao {
   font-family: "DM Sans", sans-serif;
+  margin: 0 1rem;
   text-align: justify;
 
   p {
     color: #7a7a7a;
   }
+
+  @media (min-width: 1400px) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto !important;
+    width: 40%;
+
+    h1 {
+      align-self: flex-start;
+      font-size: 3rem !important;
+      margin-top: 3rem !important;
+    }
+
+    p {
+      font-size: 1.4rem !important;
+    }
+  }
 }
 
 .dataWrapper {
   text-align: center;
+
+  h1 {
+    margin: 0 !important;
+  }
+
   hr {
     width: 60vw;
+  }
+
+  @media (min-width: 1400px) {
+    h1 {
+      font-size: 2.5rem !important;
+    }
+    p {
+      font-size: 1.2rem !important;
+    }
+    hr {
+      width: 25vw;
+    }
+  }
+}
+
+.descricaoImg {
+  display: none;
+  @media (min-width: 1400px) {
+    display: block;
   }
 }
 
 .box {
-  background-color: #1e6492;
+  box-sizing: border-box;
   color: #fff;
+  display: flex;
+  flex-direction: column;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   height: 160px;
+  justify-items: center;
   text-align: justify;
 
-  &:nth-child(2) {
-    background-color: #0e2f8c;
+  @media (min-width: 768px) {
+    height: 190px;
+    padding-top: 50px !important;
+  }
+
+  @media (min-width: 1400px) {
+    justify-content: center;
+    height: 220px;
+    padding: 0 !important;
+
+    h1 {
+      font-size: 2rem !important;
+      padding-top: 0 !important;
+    }
+
+    p {
+      font-size: 1.4rem !important;
+    }
   }
 }
 
@@ -36,5 +114,19 @@
     color: #f5f9ff;
     font-family: "DM Sans", sans-serif;
     width: 80%;
+  }
+
+  @media (min-width: 1100px) {
+    height: 350px;
+
+    p {
+      font-size: 2rem !important;
+    }
+
+    button {
+      font-size: 1.2rem !important;
+      height: 70px;
+      width: 250px;
+    }
   }
 }

@@ -1,6 +1,61 @@
-.homeBg {
-  background: url("/images/bg.jpg") no-repeat;
-  background-size: cover;
-  min-height: 40vh;
+.slideContainer {
+  font-family: "DM Sans", sans-serif;
+  h3 {
+    font-size: 1.3rem !important;
+  }
+
+  p {
+    font-size: 0.8rem !important;
+  }
+
+  @media (min-width: 768px) {
+    img {
+      height: 500px !important;
+      width: 1500px !important;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    img {
+      height: 600px !important;
+      width: 2500px !important;
+    }
+
+    h3 {
+      font-size: 3rem !important;
+    }
+
+    p {
+      font-size: 1.5rem !important;
+    }
+  }
 }
 
+.navContainer {
+  font-family: "DM Sans", sans-serif;
+  @media (min-width: 992px) {
+    a {
+      font-size: 1.2rem !important;
+      margin-left: 0.5rem;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    a {
+      font-size: 1.4rem !important;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.navImg {
+  @media (min-width: 992px) {
+    padding: 0;
+
+    img {
+      font-size: 1.5rem !important;
+      width: 130px !important;
+      height: 80px !important;
+    }
+  }
+}

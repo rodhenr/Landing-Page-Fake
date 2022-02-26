@@ -7,7 +7,7 @@ function index() {
   return (
     <section id="clientes" className={styles.container}>
       <Stack>
-        <h1 className="fs-3 m-4 mt-5">NOSSOS TRABALHOS</h1>
+        <h1 className="fs-3 mb-4 mt-5 px-4">NOSSOS TRABALHOS</h1>
         <ClientBox text={"FAZENDINHA 3 IRMÃOS"} imgName="solar1.jpg" />
         <ClientBox text={"A&B CONFECÇÕES"} imgName="solar2.jpg" />
         <ClientBox text={"AMERICANOS"} imgName="solar3.jpg" />
