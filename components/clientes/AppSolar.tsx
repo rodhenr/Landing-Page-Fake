@@ -11,7 +11,9 @@ function AppSolar() {
         <Col xs="12" md="7">
           <Stack className={`${styles.appContainer} p-0`}>
             <Row>
-              <h1 className="fs-3 m-0 p-0">Já conhece o nosso app?</h1>
+              <h1 className="fs-3 m-0 p-0 text-center">
+                Já conhece o nosso app?
+              </h1>
             </Row>
             <Row>
               <p className="mt-3 mb-0 p-0">
@@ -19,21 +21,21 @@ function AppSolar() {
                 por dentro das nossas novidades.
               </p>
             </Row>
-            <div className={`${styles.appStore} align-self-center`}>
+            <div className={styles.appStore}>
               <Row className="mt-5">
                 <Image
                   src="/images/play_store.png"
                   alt="Play Store"
-                  height="45px"
-                  width="150px"
+                  height="50px"
+                  width="180px"
                 />
               </Row>
-              <Row className="mt-3">
+              <Row className="mt-5">
                 <Image
                   src="/images/app_store.png"
                   alt="App Store"
-                  height="45px"
-                  width="150px"
+                  height="50px"
+                  width="180px"
                 />
               </Row>
             </div>
