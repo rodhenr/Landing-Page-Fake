@@ -5,10 +5,11 @@ Para este projeto foram utilizadas as seguintes tecnologias:
 * [Next.JS](https://nextjs.org/)
 * [Typescript](https://www.typescriptlang.org/)
 * [SASS](https://sass-lang.com/)
+* [React-Bootstrap](https://react-bootstrap.github.io/)
 
 ## Live Demo
 
-Para visualização de uma versão demo do site clique [aqui](LINK).
+Para visualização de uma versão demo do site clique [aqui](https://landing-page-fake.vercel.app/).
 
 
 
